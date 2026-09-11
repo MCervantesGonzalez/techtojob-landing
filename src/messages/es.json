@@ -1,7 +1,7 @@
 {
   "metadata": {
     "title": "TechToJob — Comunidad de desarrolladores y empresas tech",
-    "description": "Comunidad de desarrolladores y empresas tech en español. Construye, participa y te conocen antes de que haya una vacante."
+    "description": "Comunidad de desarrolladores y empresas tech en español. Construye y participa, primero te conocen, después llega la oportunidad."
   },
   "header": {
     "nav": {
@@ -16,33 +16,32 @@
   },
   "tickerBanner": {
     "keywords": [
-      "#DESARROLLO",
-      "TORNEOS EN VIVO",
-      "CERO BOTS DE RRHH",
+      "SIN CVS AUTOMÁTICOS",
+      "PERSONAS REALES",
+      "CONTACTO DIRECTO",
       "CÓDIGO QUE HABLA",
-      "PROYECTOS REALES",
-      "#INFRA-Y-DEVOPS",
-      "#DATOS-E-IA",
-      "#PORTFOLIOS",
-      "#OFERTAS-TRABAJO",
-      "SIN PERFILES FALSOS"
+      "TORNEOS",
+      "COMUNIDAD",
+      "DEVS PARA DEVS",
+      "HACKEANDO EL RECLUTAMIENTO",
+      "TALENTO SIN ETIQUETAS"
     ]
   },
   "hero": {
-    "badge": "Cero CVs al vacío",
+    "badge": "No más CVs sin respuesta",
     "headlineLine1": "Haz que tu trabajo",
     "headlineHighlight": "hable por ti",
-    "description": "TechToJob es la comunidad donde desarrolladores y empresas se conocen antes de que exista una vacante. Construyes, participas y te ven trabajar.",
+    "description": "TechToJob es la comunidad donde desarrolladores y empresas se conocen antes de que exista una vacante. Construyes, participas y demuestras lo que sabes hacer.",
     "cta": "Únete a la comunidad"
   },
   "howItWorks": {
     "badge": "Cómo funciona",
-    "title": "Tres pasos. Sin rodeos.",
+    "title": "Tan simple como esto: tres pasos.",
     "description": "Las oportunidades no salen de rellenar formularios. Salen de participar.",
     "steps": [
       {
         "number": "01",
-        "title": "Entras al Discord",
+        "title": "Únete a la comunidad",
         "description": "Sin formularios. Sin esperas. Entras, te presentas y empiezas a formar parte."
       },
       {
@@ -52,8 +51,8 @@
       },
       {
         "number": "03",
-        "title": "Te conocen antes de que haya una vacante",
-        "description": "Las empresas te ven trabajar. Te escriben directamente. Sin filtros automáticos que descarten tu CV antes de que lo lea una persona."
+        "title": "Primero te conocen. Después llega la oportunidad.",
+        "description": "Las empresas ven tu trabajo. Te escriben directamente. Sin filtros automáticos que descarten tu CV antes de que lo lea una persona."
       }
     ]
   },
@@ -63,19 +62,19 @@
     "description": "No importa si buscas trabajo o si buscas gente. Aquí empieza igual: entrando a la comunidad.",
     "devs": {
       "title": "PARA DEVS",
-      "description": "Publica tu perfil con tu stack, tu nivel y qué buscas. Las empresas de la comunidad lo consultan cuando necesitan a alguien. Te escriben directamente. Sin filtros automáticos que descarten tu CV antes de que lo lea una persona. No hace falta ser senior. No cuesta dinero.",
+      "description": "Publica tu perfil, muestra tu stack, comparte lo que construyes y participa en la comunidad. Las empresas pueden conocerte por tu trabajo, no solo por lo que dice tu CV. No hace falta ser senior. No cuesta dinero.",
       "cta": "Publica tu perfil"
     },
     "companies": {
       "title": "PARA EMPRESAS",
-      "description": "Publica lo que buscas y accede a perfiles reales. Aquí ves a la gente trabajar antes de contratarla, no solo su CV. Menos criba y más contexto real. Sin intermediarios.",
+      "description": "Deja de contratar solo por CV. Conoce a las personas, mira lo que construyen y descubre cómo trabajan antes de contratar. Más contexto, mejores decisiones. Sin intermediarios.",
       "cta": "Publica tu oferta"
     }
   },
   "tournaments": {
     "badge": "Torneos",
     "title": "Construye bajo presión.",
-    "description": "Retos abiertos, entregas reales, jurado con criterios públicos. No es por el premio. Es por lo que aprendes y quién te ve.",
+    "description": "Retos abiertos, entregas reales, jurado con criterios públicos. No es solo por el premio. Es por lo que construyes, lo que aprendes y quién llega a verlo.",
     "features": [
       {
         "title": "Retos reales",
@@ -86,8 +85,8 @@
         "description": "Cada torneo es una oportunidad para mejorar y tener algo que enseñar en una entrevista. Participar te pone delante de empresas reales."
       },
       {
-        "title": "Lo que ganas, se usa",
-        "description": "Esta misma web salió de un torneo. Los proyectos ganadores viven, se despliegan y se usan. No son trofeos digitales."
+        "title": "Proyectos que salen al mundo",
+        "description": "Esta misma web nació en un torneo. Los proyectos ganadores no se quedan como trofeos: se publican, se usan y siguen creciendo."
       }
     ]
   },
@@ -131,7 +130,7 @@
       },
       {
         "name": "#DATOS-E-IA",
-        "description": "Machine learning, pipelines, modelos. La comunidad más activa del sector en español."
+        "description": "Machine learning, pipelines, modelos y todo lo relacionado con datos e IA."
       },
       {
         "name": "#PORTFOLIOS",
@@ -162,7 +161,7 @@
       {
         "name": "Andrés Rivas",
         "role": "Full Stack Developer",
-        "quote": "De junior a tener trabajo en 3 meses. No fue suerte. Fue participar, construir y que te conozcan de verdad."
+        "quote": "Despues de tanto buscar obtuve trabajo. No fue suerte. Fue participar, construir y que te conozcan de verdad."
       },
       {
         "name": "María Torres",
@@ -196,7 +195,7 @@
       },
       {
         "question": "¿Es gratis para desarrolladores?",
-        "answer": "Sí. No hay coste para ti. Las empresas publican sus ofertas y acceden a perfiles, tú solo participas y construyes."
+        "answer": "Sí. No hay coste para ti. Las empresas buscan y acceden a perfiles, tú solo participas y construyes."
       },
       {
         "question": "¿Necesito ser senior?",
@@ -204,16 +203,12 @@
       },
       {
         "question": "¿Cómo funcionan los torneos?",
-        "answer": "Retos reales, entregas con fecha, jurado con criterios públicos. Lo que ganas se usa. Esta misma web salió de un torneo."
-      },
-      {
-        "question": "¿Qué pasa si no consigo trabajo?",
-        "answer": "Aprendes, tienes algo que enseñar en entrevistas, construyes tu portafolio y te conectas con gente del sector. Los buenos trabajos no se encuentran, se enteran."
+        "answer": "Retos reales, entregas con fecha, jurado con criterios públicos. Ganar es solo el comienzo. Esta misma web nació de un torneo y los proyectos ganadores pueden convertirse en productos reales."
       }
     ]
   },
   "ctaClose": {
-    "title": "El trabajo que buscas ya te conoce. Solo falta que llegues.",
+    "title": "Deja de buscar oportunidades. Empieza a construirlas.",
     "description": "No llenes más formularios. Participa, construye y que te encuentren.",
     "cta": "Únete al Discord"
   },
