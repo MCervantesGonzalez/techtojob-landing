@@ -6,6 +6,7 @@ import { AudienceSplit } from "@/components/sections/AudienceSplit";
 import { Tournaments } from "@/components/sections/Tournaments";
 import { Networking } from "@/components/sections/Networking";
 import { Testimonials } from "@/components/sections/Testimonials";
+import { FAQ } from "@/components/sections/FAQ";
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
         <Tournaments />
         <Networking />
         <Testimonials />
+        <FAQ />
       </main>
     </div>
   );
