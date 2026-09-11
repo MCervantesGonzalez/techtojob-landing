@@ -4,6 +4,7 @@ import { TickerBanner } from "@/components/sections/TickerBanner";
 import { HowItWorks } from "@/components/sections/HowItWorks";
 import { AudienceSplit } from "@/components/sections/AudienceSplit";
 import { Tournaments } from "@/components/sections/Tournaments";
+import { News } from "@/components/sections/News";
 import { Networking } from "@/components/sections/Networking";
 import { Testimonials } from "@/components/sections/Testimonials";
 import { FAQ } from "@/components/sections/FAQ";
@@ -19,6 +20,7 @@ export default function Home() {
         <HowItWorks />
         <AudienceSplit />
         <Tournaments />
+        <News />
         <Networking />
         <Testimonials />
         <FAQ />
