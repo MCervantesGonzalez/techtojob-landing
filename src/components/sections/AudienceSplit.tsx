@@ -18,7 +18,7 @@ export function AudienceSplit() {
             <SectionBadge className="absolute -top-4 left-1/2 -translate-x-1/2 transition-all duration-300 group-hover:rotate-1 group-hover:-translate-y-1">
               {t.badge}
             </SectionBadge>
-            <div className="mt-4 bg-brand-white border-2 border-brand-dark px-8 py-6 shadow-[4px_4px_0px_0px_#2f3436] transition-all duration-300 hover:shadow-[8px_8px_0px_0px_#2f3436]">
+            <div className="mt-4 bg-brand-white border-2 border-brand-dark px-8 py-6 shadow-[4px_4px_0px_0px_#2f3436] transition-all duration-300 hover:shadow-[8px_8px_0px_0px_#84c0bf]">
               <h2 className="text-3xl font-bold uppercase tracking-tight text-brand-dark md:text-4xl">
                 {t.title}
               </h2>
