@@ -44,7 +44,7 @@ export function Footer() {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label={link.label}
-                className="flex h-10 w-10 items-center justify-center border-2 border-brand-dark bg-white rounded-lg p-2 transition-all duration-150 hover:-translate-x-0.5 hover:-translate-y-0.5 hover:bg-brand-dark hover:text-brand-white hover:shadow-[4px_4px_0px_0px_#2f3436]"
+                className="flex h-10 w-10 items-center justify-center border-2 border-brand-dark bg-white rounded-lg p-2 transition-all duration-150 hover:-translate-x-0.5 hover:-translate-y-0.5 hover:bg-brand-teal hover:text-brand-dark hover:shadow-[3px_3px_0px_0px_#2f3436]"
               >
                 <link.Icon className="h-5 w-5" />
               </a>
