@@ -54,8 +54,10 @@ export function News() {
                 </h3>
                 <p className="text-sm text-brand-dark/70">{item.body}</p>
               </div>
-              <div className="mt-4 flex items-center gap-1 text-xs font-semibold uppercase tracking-wide text-brand-teal">
-                Leer más <ExternalLink size={14} />
+              <div className="mt-4">
+                <span className="inline-flex items-center gap-2 bg-brand-teal text-brand-dark border-2 border-brand-dark px-4 py-2 font-bold text-sm rounded-lg hover:-translate-y-0.5 hover:shadow-[2px_2px_0px_0px_#2f3436] transition-all duration-150 ease-in-out cursor-pointer">
+                  Leer más <ExternalLink size={14} />
+                </span>
               </div>
             </NeoCard>
           ))}
