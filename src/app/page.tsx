@@ -3,6 +3,7 @@ import { Hero } from "@/components/sections/Hero";
 import { TickerBanner } from "@/components/sections/TickerBanner";
 import { HowItWorks } from "@/components/sections/HowItWorks";
 import { AudienceSplit } from "@/components/sections/AudienceSplit";
+import { Tournaments } from "@/components/sections/Tournaments";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
         <TickerBanner />
         <HowItWorks />
         <AudienceSplit />
+        <Tournaments />
       </main>
     </div>
   );
