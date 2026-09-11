@@ -3,8 +3,32 @@ import { NeoCard } from "@/components/ui/NeoCard";
 import { SectionBadge } from "@/components/ui/SectionBadge";
 import messages from "@/messages/es.json";
 
+/** Lucide icon components mapped to each workflow step. */
 const stepIcons = [LogIn, Code, UserCheck];
 
+/**
+ * Three-step workflow section explaining how TechToJob works.
+ *
+ * @remarks
+ * - **Layout**: Halftone dot-matrix background (`bg-halftone`) with centered header box
+ *   and a 3-column responsive grid (`md:grid-cols-3`) of `NeoCard` step cards.
+ * - **Header box**: White neobrutalist container with `SectionBadge` overlapping the top border.
+ *   Badge and box tilt on hover via `group`/`group-hover` pattern (`hover:-rotate-1`).
+ * - **Step cards**: Each card contains a teal icon box, step number, title, and description.
+ *   Cards are rendered from `messages.howItSteps` for i18n readiness.
+ * - **A-B-A-B rhythm**: This is the first halftone section after the dark Hero.
+ *
+ * @accessibility
+ * - Uses `<section>` with `id="como-funciona"` for navbar anchor linking.
+ * - Steps wrapped in `<ol>` (ordered list) to convey sequential workflow.
+ * - Each step uses `<h3>` for proper heading hierarchy within the section.
+ *
+ * @example
+ * ```tsx
+ * // Rendered in page.tsx after Hero.
+ * <HowItWorks />
+ * ```
+ */
 export function HowItWorks() {
   const t = messages.howItWorks;
 
@@ -12,8 +36,8 @@ export function HowItWorks() {
     <section id="como-funciona" className="bg-halftone">
       <div className="mx-auto max-w-6xl px-6 py-20 md:py-28">
         <div className="mb-12 text-center">
-          <div className="relative inline-block cursor-pointer transition-all duration-300 ease-out hover:rotate-1 hover:-translate-y-1 group">
-            <SectionBadge className="absolute -top-4 left-1/2 -translate-x-1/2 transition-all duration-300 group-hover:rotate-1 group-hover:-translate-y-1">
+          <div className="relative inline-block cursor-pointer transition-all duration-300 ease-out hover:-rotate-1 hover:-translate-y-1 group">
+            <SectionBadge className="absolute -top-4 left-1/2 -translate-x-1/2 transition-all duration-300 group-hover:-rotate-1 group-hover:-translate-y-1">
               {t.badge}
             </SectionBadge>
             <div className="mt-4 bg-brand-white border-2 border-brand-dark px-8 py-6 shadow-[4px_4px_0px_0px_#2f3436] transition-all duration-300 hover:shadow-[8px_8px_0px_0px_#84c0bf]">

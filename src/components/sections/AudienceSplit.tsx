@@ -4,6 +4,31 @@ import { NeoCard } from "@/components/ui/NeoCard";
 import { SectionBadge } from "@/components/ui/SectionBadge";
 import messages from "@/messages/es.json";
 
+/**
+ * Two-column audience segmentation section — Developers vs Companies.
+ *
+ * @remarks
+ * - **Layout**: Dark `bg-noise` background with centered header box and a 2-column
+ *   responsive grid (`md:grid-cols-2`) of `NeoCard` audience cards.
+ * - **Header box**: White neobrutalist container with `SectionBadge` overlapping the top border.
+ *   Badge and box rotate on hover via `group`/`group-hover` pattern (`hover:rotate-1`).
+ * - **Devs card**: `User` icon, profile-focused description, "Publica tu perfil" CTA linking
+ *   to Discord.
+ * - **Companies card**: `Building2` icon, hiring-focused description, "Publica tu oferta" CTA
+ *   linking to Discord.
+ * - Both CTAs use `NeoButton variant="teal"` with `w-full sm:w-auto` for responsive sizing.
+ *
+ * @accessibility
+ * - Uses `<section>` with `id="para-quien"` for navbar anchor linking.
+ * - Each card uses `<h3>` for audience type heading hierarchy.
+ * - CTA links open Discord in new tabs with `rel="noopener noreferrer"`.
+ *
+ * @example
+ * ```tsx
+ * // Rendered in page.tsx after HowItWorks.
+ * <AudienceSplit />
+ * ```
+ */
 export function AudienceSplit() {
   const t = messages.audienceSplit;
 

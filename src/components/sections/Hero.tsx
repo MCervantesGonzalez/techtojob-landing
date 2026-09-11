@@ -2,6 +2,29 @@ import { NeoButton } from "@/components/ui/NeoButton";
 import { SectionBadge } from "@/components/ui/SectionBadge";
 import messages from "@/messages/es.json";
 
+/**
+ * Primary landing fold hero section — the first visual impression above the fold.
+ *
+ * @remarks
+ * - **Layout**: Centered vertical stack (`flex-col items-center text-center`) with generous
+ *   vertical padding (`py-28 md:py-36`) for breathing room on the dark `bg-noise` background.
+ * - **Headline**: Two-line structure — line one in white, line two ("hable por ti") inside a
+ *   teal highlight box with `-rotate-2` for a casual neobrutalist tilt.
+ * - **CTA**: Discord join button (`NeoButton variant="teal"`) linking to the community invite.
+ * - **Static section**: No hover animations on text elements to keep the hero completely still
+ *   and focused on the message.
+ *
+ * @accessibility
+ * - Uses `<section>` with implicit `aria-label` from heading content.
+ * - Single `<h1>` element for page heading hierarchy.
+ * - CTA link opens in new tab with `rel="noopener noreferrer"`.
+ *
+ * @example
+ * ```tsx
+ * // Rendered in page.tsx as the first section after Header/TickerBanner.
+ * <Hero />
+ * ```
+ */
 export function Hero() {
   const t = messages.hero;
 
