@@ -4,6 +4,31 @@ import { useState } from "react";
 import { SectionBadge } from "@/components/ui/SectionBadge";
 import messages from "@/messages/es.json";
 
+/**
+ * Frequently asked questions section with interactive accordion toggles.
+ *
+ * @remarks
+ * - **Layout**: Dark `bg-noise` background with centered badge+title header and a vertical
+ *   stack of accordion items at `max-w-3xl`.
+ * - **State**: Uses `useState<number | null>` to track the currently open FAQ index.
+ *   Only one item can be open at a time — clicking an open item closes it (`null`).
+ * - **Accordion items**: Dark cards with teal border and shadow. Each item has a toggle button
+ *   showing `+`/`−` inside a teal badge, plus the question text. The answer body renders
+ *   conditionally below when `isOpen` is true.
+ * - **Hover effects**: Each accordion card has a subtle lift (`hover:-translate-y-1`) and
+ *   shadow expansion on hover via `transition-all duration-200`.
+ *
+ * @accessibility
+ * - Toggle buttons use `aria-expanded={isOpen}` for screen reader state.
+ * - `<button>` elements ensure keyboard interactability.
+ * - Questions use uppercase bold text for clear visual hierarchy.
+ *
+ * @example
+ * ```tsx
+ * // Rendered in page.tsx after Newsletter.
+ * <FAQ />
+ * ```
+ */
 export function FAQ() {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
   const t = messages.faq;

@@ -3,13 +3,44 @@
 import { SectionBadge } from "@/components/ui/SectionBadge";
 import messages from "@/messages/es.json";
 
+/**
+ * Newsletter subscription section with email input and submit button.
+ *
+ * @remarks
+ * - **Layout**: Halftone background with a white neobrutalist card (`rounded-2xl`) centered
+ *   at `max-w-4xl`. Badge overlaps the top border of the card.
+ * - **Form**: Horizontal flex layout on desktop (`sm:flex-row`), stacked on mobile.
+ *   Uses `onSubmit={(e) => e.preventDefault()}` as a placeholder handler — no backend
+ *   integration yet. Ready for future API endpoint attachment.
+ * - **Email input**: `type="email"` for native browser validation UI. Styled with
+ *   `focus:ring-2 focus:ring-brand-teal` for focus state feedback.
+ * - **Submit button**: Teal neobrutalist button with hover lift. No success/error states
+ *   implemented yet — form currently prevents default submission.
+ * - **i18n**: Placeholder text and button label sourced from `messages/newsletter`.
+ *
+ * @accessibility
+ * - Uses `<form>` with `<input type="email">` for native validation.
+ * - Input has placeholder text as visual label (consider adding `<label>` for full a11y).
+ * - Submit button uses `type="submit"` for keyboard submission.
+ *
+ * @todo
+ * - Add form submission handler with API integration.
+ * - Add success/error state feedback UI.
+ * - Add visible `<label>` element for the email input.
+ *
+ * @example
+ * ```tsx
+ * // Rendered in page.tsx after Testimonials.
+ * <Newsletter />
+ * ```
+ */
 export function Newsletter() {
   const t = messages.newsletter;
 
   return (
     <section className="bg-halftone">
       <div className="mx-auto max-w-4xl px-6 py-20 md:py-28">
-        <div className="relative bg-brand-white border-2 border-brand-dark shadow-[6px_6px_0px_0px_#2f3436] p-8 md:p-12 rounded-2xl text-center transition-all duration-300 hover:-rotate-1 hover:-translate-y-1 hover:shadow-[8px_8px_0px_0px_#2f3436]">
+        <div className="relative bg-brand-white border-2 border-brand-dark shadow-[6px_6px_0px_0px_#2f3436] p-8 md:p-12 rounded-2xl text-center transition-all duration-300 hover:-translate-y-1 hover:shadow-[8px_8px_0px_0px_#2f3436]">
           <SectionBadge className="absolute -top-4 left-1/2 -translate-x-1/2">
             {t.badge}
           </SectionBadge>

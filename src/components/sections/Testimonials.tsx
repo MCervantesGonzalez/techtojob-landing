@@ -2,6 +2,30 @@ import { NeoCard } from "@/components/ui/NeoCard";
 import { SectionBadge } from "@/components/ui/SectionBadge";
 import messages from "@/messages/es.json";
 
+/**
+ * Social proof section displaying real member testimonials in a card grid.
+ *
+ * @remarks
+ * - **Layout**: Dark `bg-noise` background with centered white header box and a 4-column
+ *   responsive grid (`sm:grid-cols-2 lg:grid-cols-4`) of `NeoCard` testimonial cards.
+ * - **Header box**: White neobrutalist container with `SectionBadge` overlapping the top border.
+ *   Hover tilt via `group`/`group-hover` pattern (`hover:rotate-1`).
+ * - **Card structure**: Each card contains an initial-avatar box (first letters of first+last name),
+ *   member name and role, a blockquote with the testimonial quote, and a LinkedIn CTA link.
+ * - **Initial-avatar fallback**: Generated client-side by splitting the name on spaces, taking
+ *   `[0]` of each word, and joining them (e.g., "Carlos Mendoza" → "CM").
+ *
+ * @accessibility
+ * - Uses `<section>` with heading hierarchy (`<h2>` for title).
+ * - Testimonial quotes wrapped in `<blockquote>` for semantic meaning.
+ * - LinkedIn links open in new tabs with `rel="noopener noreferrer"`.
+ *
+ * @example
+ * ```tsx
+ * // Rendered in page.tsx after Networking.
+ * <Testimonials />
+ * ```
+ */
 export function Testimonials() {
   const t = messages.testimonials;
 
