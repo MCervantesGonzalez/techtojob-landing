@@ -3,12 +3,44 @@ import { NeoCard } from "@/components/ui/NeoCard";
 import { SectionBadge } from "@/components/ui/SectionBadge";
 import messages from "@/messages/es.json";
 
+/**
+ * Color mapping for news category badges.
+ * Each key matches a category string from `messages.news.items[].category`.
+ *
+ * - **Torneos**: Teal background — tournament-related news.
+ * - **Empleo**: Dark background — job/employment news.
+ * - **Comunidad**: White background with border — community feature news.
+ */
 const categoryColors: Record<string, string> = {
   Torneos: "bg-brand-teal text-brand-dark",
   Empleo: "bg-brand-dark text-brand-white",
   Comunidad: "bg-brand-white text-brand-dark border-2 border-brand-dark",
 };
 
+/**
+ * Community news section displaying 3 latest updates in a card grid.
+ *
+ * @remarks
+ * - **Layout**: Dark `bg-noise` background with centered white header box and a 3-column
+ *   responsive grid (`md:grid-cols-3`) of `NeoCard` news cards.
+ * - **Header box**: White neobrutalist container with `SectionBadge` overlapping the top border.
+ *   Hover tilt via `group`/`group-hover` pattern (`hover:rotate-1`).
+ * - **Card structure**: Each card contains a category badge (color-coded via `categoryColors`),
+ *   publication date, title, body text, and a "Leer más" neobrutalist button with `ExternalLink` icon.
+ * - **Data source**: All text content (badge, title, items, readMore) sourced from
+ *   `messages.news` for i18n readiness.
+ *
+ * @accessibility
+ * - Uses `<section>` with `id="novedades"` for navbar anchor linking.
+ * - News items use `<h3>` for heading hierarchy within each card.
+ * - Category badges use uppercase text for visual clarity.
+ *
+ * @example
+ * ```tsx
+ * // Rendered in page.tsx after Tournaments.
+ * <News />
+ * ```
+ */
 export function News() {
   const t = messages.news;
 

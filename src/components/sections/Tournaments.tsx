@@ -3,8 +3,42 @@ import { NeoCard } from "@/components/ui/NeoCard";
 import { SectionBadge } from "@/components/ui/SectionBadge";
 import messages from "@/messages/es.json";
 
+/**
+ * Lucide icon components mapped to each tournament feature card.
+ * Icons are positionally aligned with `messages.tournaments.features[]`.
+ *
+ * - `Trophy` → Retos reales (real challenges)
+ * - `Lightbulb` → Aprendes y te conocen (learn and get known)
+ * - `Rocket` → Lo que ganas, se usa (what you win gets used)
+ */
 const featureIcons = [Trophy, Lightbulb, Rocket];
 
+/**
+ * Tournaments showcase section highlighting competition features and criteria.
+ *
+ * @remarks
+ * - **Layout**: Halftone background (`bg-halftone`) with centered white header box and a
+ *   3-column responsive grid (`md:grid-cols-3`) of `NeoCard` feature cards.
+ * - **Header box**: White neobrutalist container with `SectionBadge` overlapping the top border.
+ *   Hover tilt via `group`/`group-hover` pattern (`hover:-rotate-1`).
+ * - **Feature cards**: Each card has a teal icon (mapped via `featureIcons`), feature title,
+ *   and description explaining a key aspect of the tournament system.
+ * - **Data source**: Feature titles and descriptions sourced from `messages.tournaments.features`
+ *   for i18n readiness. Icons are mapped by array index position.
+ * - **No CTA**: This section is informational — it showcases the tournament system without
+ *   a direct call-to-action button.
+ *
+ * @accessibility
+ * - Uses `<section>` with `id="torneos"` for navbar anchor linking.
+ * - Feature cards use `<h3>` for heading hierarchy within each card.
+ * - Icons are decorative — feature title provides the accessible label.
+ *
+ * @example
+ * ```tsx
+ * // Rendered in page.tsx after AudienceSplit.
+ * <Tournaments />
+ * ```
+ */
 export function Tournaments() {
   const t = messages.tournaments;
 
