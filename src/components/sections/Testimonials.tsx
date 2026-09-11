@@ -8,14 +8,20 @@ export function Testimonials() {
   return (
     <section className="bg-brand-dark bg-noise text-brand-white">
       <div className="mx-auto max-w-6xl px-6 py-20 md:py-28">
-        <div className="mb-16 text-center">
-          <SectionBadge className="mb-6">{t.badge}</SectionBadge>
-          <h2 className="mt-4 text-3xl font-bold uppercase tracking-tight md:text-4xl">
-            {t.title}
-          </h2>
-          <p className="mt-4 max-w-2xl mx-auto text-gray-300">
-            {t.description}
-          </p>
+        <div className="mb-12 text-center">
+          <div className="relative inline-block cursor-pointer transition-all duration-300 ease-out hover:rotate-1 hover:-translate-y-1 group">
+            <SectionBadge className="absolute -top-4 left-1/2 -translate-x-1/2 transition-all duration-300 group-hover:rotate-1 group-hover:-translate-y-1">
+              {t.badge}
+            </SectionBadge>
+            <div className="mt-4 bg-brand-white border-2 border-brand-dark shadow-[4px_4px_0px_0px_#2f3436] p-6 sm:p-8 rounded-2xl text-center text-brand-dark max-w-3xl mx-auto transition-all duration-300 hover:shadow-[8px_8px_0px_0px_#2f3436]">
+              <h2 className="text-3xl font-bold uppercase tracking-tight md:text-4xl">
+                {t.title}
+              </h2>
+              <p className="mt-3 max-w-2xl mx-auto text-brand-dark/70">
+                {t.description}
+              </p>
+            </div>
+          </div>
         </div>
 
         <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
