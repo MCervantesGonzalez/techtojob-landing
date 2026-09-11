@@ -34,14 +34,14 @@ const testimonials = [
 
 export function Testimonials() {
   return (
-    <section className="bg-halftone">
+    <section className="bg-brand-dark bg-noise text-brand-white">
       <div className="mx-auto max-w-6xl px-6 py-20 md:py-28">
         <div className="mb-12 text-center">
           <SectionBadge>Testimonios</SectionBadge>
-          <h2 className="mt-6 text-3xl font-bold uppercase tracking-tight text-brand-dark md:text-4xl">
+          <h2 className="mt-6 text-3xl font-bold uppercase tracking-tight md:text-4xl">
             Gente real. Resultados reales.
           </h2>
-          <p className="mt-4 max-w-2xl mx-auto text-brand-dark/70">
+          <p className="mt-4 max-w-2xl mx-auto text-gray-300">
             La comunidad funciona. Estos son algunos de los que ya sacaron algo
             de valor participando.
           </p>
@@ -59,7 +59,7 @@ export function Testimonials() {
                       .join("")}
                   </div>
                   <div>
-                    <p className="text-sm font-bold">{t.name}</p>
+                    <p className="text-sm font-bold text-brand-dark">{t.name}</p>
                     <p className="text-xs text-brand-dark/60">{t.role}</p>
                   </div>
                 </div>
@@ -71,7 +71,7 @@ export function Testimonials() {
                 href={t.linkedin}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="mt-4 text-xs font-semibold uppercase tracking-wide text-brand-teal hover:text-brand-dark transition-colors"
+                className="mt-4 inline-flex items-center gap-1 text-xs font-semibold uppercase tracking-wide text-brand-teal hover:text-brand-dark hover:underline transition-colors"
               >
                 LinkedIn →
               </a>
