@@ -1,9 +1,35 @@
 import { type ButtonHTMLAttributes } from "react";
 
+/**
+ * Props for the NeoButton component.
+ * Extends native HTML button attributes with neobrutalist variant styling.
+ */
 type NeoButtonProps = ButtonHTMLAttributes<HTMLButtonElement> & {
+  /** Visual variant controlling background, text, and shadow colors. */
   variant?: "primary" | "secondary" | "teal";
 };
 
+/**
+ * Neobrutalist button component with hard offset shadows and hover lift.
+ *
+ * @remarks
+ * - **primary**: White background, dark text, teal shadow — use for secondary actions.
+ * - **secondary**: Dark background, white text, teal shadow — use for muted CTAs.
+ * - **teal**: Teal background, dark text, dark shadow — use for primary CTAs.
+ *
+ * All variants include a proportional hover lift (`-translate-x-0.5 -translate-y-0.5`)
+ * and shadow expansion on hover for tactile feedback.
+ *
+ * @accessibility
+ * - Uses native `<button>` element with full `ButtonHTMLAttributes` support.
+ * - Ensure sufficient contrast when overriding classes via `className`.
+ *
+ * @example
+ * ```tsx
+ * <NeoButton variant="teal">Únete al Discord</NeoButton>
+ * <NeoButton variant="primary" className="w-full">Publica tu perfil</NeoButton>
+ * ```
+ */
 export function NeoButton({
   variant = "primary",
   className = "",

@@ -6,6 +6,28 @@ import { Menu, X } from "lucide-react";
 import { NeoButton } from "@/components/ui/NeoButton";
 import messages from "@/messages/es.json";
 
+/**
+ * Sticky top navigation bar with desktop links, mobile hamburger menu, and Discord CTA.
+ *
+ * @remarks
+ * - **Desktop** (md+): Horizontal nav links + teal CTA button aligned right.
+ * - **Mobile** (<md): Hamburger icon toggles a slide-down menu with links + full-width CTA.
+ * - All section anchor links (`#como-funciona`, `#para-quien`, `#torneos`, `#novedades`)
+ *   use native `<a href>` for smooth scrolling (powered by `scroll-behavior: smooth` in globals.css).
+ * - The CTA button uses `scrollIntoView({ behavior: "smooth" })` to scroll to the footer.
+ * - Mobile menu auto-closes on link click via `setMenuOpen(false)`.
+ *
+ * @accessibility
+ * - Hamburger button has dynamic `aria-label` toggling between "Abrir menú" / "Cerrar menú".
+ * - Uses Lucide `Menu` / `X` icons for clear open/close visual state.
+ * - Sticky positioning with `z-50` ensures nav stays above all page content.
+ *
+ * @example
+ * ```tsx
+ * // Rendered globally in layout.tsx — no props needed.
+ * <Header />
+ * ```
+ */
 export function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
   const t = messages.header;

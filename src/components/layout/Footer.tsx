@@ -8,6 +8,9 @@ import {
 } from "./SocialIcons";
 import messages from "@/messages/es.json";
 
+/**
+ * Social media link configuration mapping platform names to SVG icon components and URLs.
+ */
 const socialLinks = [
   { label: "Discord", href: "https://discord.gg/h9FFgKdkRd", Icon: DiscordIcon },
   { label: "LinkedIn", href: "https://www.linkedin.com/company/techtojob/", Icon: LinkedInIcon },
@@ -16,6 +19,28 @@ const socialLinks = [
   { label: "TikTok", href: "https://www.tiktok.com/@techtojob", Icon: TikTokIcon },
 ];
 
+/**
+ * Site footer with logo, social icon buttons, and copyright notice.
+ *
+ * @remarks
+ * - **Layout**: Horizontal flex row on desktop (logo | social icons | copyright), stacked on mobile.
+ * - **Social icons**: Rendered as square neobrutalist buttons using SVG components from `SocialIcons.tsx`.
+ *   Each icon is a 40×40 box with `border-2 border-brand-dark` and a teal hover lift.
+ * - **Smooth scroll target**: The footer has `id="footer"` used by the Header CTA button's
+ *   `scrollIntoView()` call.
+ * - All text content is sourced from `messages/es.json` for i18n readiness.
+ *
+ * @accessibility
+ * - Each social link includes `aria-label` with the platform name for screen readers.
+ * - Links open in new tabs with `rel="noopener noreferrer"` for security.
+ * - Uses `<footer>` landmark element for proper document structure.
+ *
+ * @example
+ * ```tsx
+ * // Rendered globally in layout.tsx — no props needed.
+ * <Footer />
+ * ```
+ */
 export function Footer() {
   const t = messages.footer;
 

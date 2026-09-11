@@ -4,6 +4,26 @@ import { useState, useEffect } from "react";
 import Image from "next/image";
 import messages from "@/messages/es.json";
 
+/**
+ * Floating scroll-to-top button that appears after scrolling past 400px.
+ *
+ * @remarks
+ * - Fixed-positioned at bottom-right (`bottom-6 right-6`) with `z-50` to stay above all content.
+ * - Uses the `LogoScroll.svg` icon for branding consistency.
+ * - Triggers `window.scrollTo({ behavior: "smooth" })` on click.
+ * - Visibility is controlled by a scroll listener (passive) that toggles at `scrollY > 400`.
+ *
+ * @accessibility
+ * - Includes `aria-label` from `messages.scrollToTop` ("Volver arriba") for screen readers.
+ * - Uses `<button>` element for proper keyboard interaction.
+ * - The icon image has an empty `alt` attribute since the aria-label conveys meaning.
+ *
+ * @example
+ * ```tsx
+ * // Rendered globally in layout.tsx — no props needed.
+ * <ScrollToTop />
+ * ```
+ */
 export function ScrollToTop() {
   const [visible, setVisible] = useState(false);
 

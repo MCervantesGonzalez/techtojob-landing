@@ -1,3 +1,26 @@
+/**
+ * SVG icon components for social media platforms.
+ *
+ * @remarks
+ * Each component renders an inline SVG with `fill="currentColor"` so the icon
+ * color inherits from the parent's `text-*` class. The `className` prop is
+ * forwarded to the `<svg>` element for sizing and styling flexibility.
+ *
+ * @accessibility
+ * - These icons are decorative — they should always be paired with `aria-label`
+ *   on the parent `<a>` element (handled by `Footer.tsx`).
+ * - The SVG elements do not include `<title>` since the accessible name comes
+ *   from the link's `aria-label`.
+ *
+ * @example
+ * ```tsx
+ * <a href="https://discord.gg/..." aria-label="Discord">
+ *   <DiscordIcon className="h-5 w-5" />
+ * </a>
+ * ```
+ */
+
+/** Discord chat platform icon. */
 export function DiscordIcon({ className }: { className?: string }) {
   return (
     <svg className={className} viewBox="0 0 24 24" fill="currentColor">
@@ -6,6 +29,7 @@ export function DiscordIcon({ className }: { className?: string }) {
   );
 }
 
+/** LinkedIn professional network icon. */
 export function LinkedInIcon({ className }: { className?: string }) {
   return (
     <svg className={className} viewBox="0 0 24 24" fill="currentColor">
@@ -14,6 +38,7 @@ export function LinkedInIcon({ className }: { className?: string }) {
   );
 }
 
+/** X (formerly Twitter) social media icon. */
 export function XIcon({ className }: { className?: string }) {
   return (
     <svg className={className} viewBox="0 0 24 24" fill="currentColor">
@@ -22,6 +47,7 @@ export function XIcon({ className }: { className?: string }) {
   );
 }
 
+/** Instagram photo-sharing platform icon. */
 export function InstagramIcon({ className }: { className?: string }) {
   return (
     <svg className={className} viewBox="0 0 24 24" fill="currentColor">
@@ -30,6 +56,7 @@ export function InstagramIcon({ className }: { className?: string }) {
   );
 }
 
+/** TikTok short-form video platform icon. */
 export function TikTokIcon({ className }: { className?: string }) {
   return (
     <svg className={className} viewBox="0 0 24 24" fill="currentColor">
