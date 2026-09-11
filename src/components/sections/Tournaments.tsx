@@ -11,7 +11,7 @@ const features = [
     Icon: Trophy,
   },
   {
-    title: "Aprendes y te danastically conocen",
+    title: "Aprendes y te conocen",
     description:
       "Cada torneo es una oportunidad para mejorar y tener algo que enseñar en una entrevista. Participar te pone delante de empresas reales.",
     Icon: Lightbulb,
@@ -29,14 +29,20 @@ export function Tournaments() {
     <section id="torneos" className="bg-halftone">
       <div className="mx-auto max-w-6xl px-6 py-20 md:py-28">
         <div className="mb-12 text-center">
-          <SectionBadge>Torneos</SectionBadge>
-          <h2 className="mt-6 text-3xl font-bold uppercase tracking-tight text-brand-dark md:text-4xl">
-            Construye bajo presión. Destaca de verdad.
-          </h2>
-          <p className="mt-4 max-w-2xl mx-auto text-brand-dark/70">
-            Retos abiertos, entregas reales, jurado con criterios públicos. No
-            es por el premio. Es por lo que aprendes y quién te ve.
-          </p>
+          <div className="relative inline-block -rotate-1">
+            <SectionBadge className="absolute -top-4 left-1/2 -translate-x-1/2">
+              Torneos
+            </SectionBadge>
+            <div className="mt-4 bg-brand-white border-2 border-brand-dark px-8 py-6 shadow-[4px_4px_0px_0px_#2f3436]">
+              <h2 className="text-3xl font-bold uppercase tracking-tight text-brand-dark md:text-4xl">
+                Construye bajo presión. Destaca de verdad.
+              </h2>
+              <p className="mt-3 max-w-2xl text-lg font-semibold text-brand-dark/80">
+                Retos abiertos, entregas reales, jurado con criterios públicos. No
+                es por el premio. Es por lo que aprendes y quién te ve.
+              </p>
+            </div>
+          </div>
         </div>
 
         <div className="grid gap-8 md:grid-cols-3">
