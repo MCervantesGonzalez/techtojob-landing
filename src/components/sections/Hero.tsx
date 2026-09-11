@@ -10,7 +10,7 @@ export function Hero() {
         <h1 className="mb-6 text-4xl font-bold uppercase leading-tight tracking-tight md:text-6xl md:leading-none">
           Haz que tu trabajo
           <br />
-          <span className="inline-block bg-brand-teal px-5 py-2 border-2 border-brand-dark text-brand-dark mt-1 -rotate-2 shadow-[4px_4px_0px_0px_#84c0bf]">
+          <span className="inline-block bg-brand-teal px-5 py-2 text-brand-dark mt-1 -rotate-2">
             hable por ti
           </span>
         </h1>
