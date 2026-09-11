@@ -31,15 +31,19 @@ export function HowItWorks() {
     <section id="como-funciona" className="bg-halftone">
       <div className="mx-auto max-w-6xl px-6 py-20 md:py-28">
         <div className="mb-12 text-center">
-          <SectionBadge>Cómo funciona</SectionBadge>
-          <div className="mt-6 inline-block -rotate-1 bg-brand-white border-2 border-brand-dark px-8 py-6 shadow-[4px_4px_0px_0px_#2f3436]">
-            <h2 className="text-3xl font-bold uppercase tracking-tight text-brand-dark md:text-4xl">
-              Tres pasos. Sin rodeos.
-            </h2>
-            <p className="mt-3 max-w-2xl text-lg font-semibold text-brand-dark/80">
-              Las oportunidades no salen de rellenar formularios. Salen de
-              participar.
-            </p>
+          <div className="relative inline-block -rotate-1">
+            <SectionBadge className="absolute -top-4 left-1/2 -translate-x-1/2">
+              Cómo funciona
+            </SectionBadge>
+            <div className="mt-4 bg-brand-white border-2 border-brand-dark px-8 py-6 shadow-[4px_4px_0px_0px_#2f3436]">
+              <h2 className="text-3xl font-bold uppercase tracking-tight text-brand-dark md:text-4xl">
+                Tres pasos. Sin rodeos.
+              </h2>
+              <p className="mt-3 max-w-2xl text-lg font-semibold text-brand-dark/80">
+                Las oportunidades no salen de rellenar formularios. Salen de
+                participar.
+              </p>
+            </div>
           </div>
         </div>
 
