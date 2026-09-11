@@ -64,7 +64,7 @@ export function FAQ() {
                   </span>
                 </button>
                 {isOpen && (
-                  <div className="px-6 pb-6 pl-[60px] text-sm text-gray-300">
+                  <div className="px-6 pb-6 pl-15 text-sm text-gray-300">
                     {faq.answer}
                   </div>
                 )}
