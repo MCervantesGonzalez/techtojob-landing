@@ -1,6 +1,7 @@
 import { Header } from "@/components/layout/Header";
 import { Hero } from "@/components/sections/Hero";
 import { TickerBanner } from "@/components/sections/TickerBanner";
+import { HowItWorks } from "@/components/sections/HowItWorks";
 
 export default function Home() {
   return (
@@ -9,6 +10,7 @@ export default function Home() {
       <main className="flex-1">
         <Hero />
         <TickerBanner />
+        <HowItWorks />
       </main>
     </div>
   );
