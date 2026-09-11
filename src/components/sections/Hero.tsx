@@ -10,7 +10,9 @@ export function Hero() {
         <h1 className="mb-6 text-4xl font-bold uppercase leading-tight tracking-tight md:text-6xl md:leading-none">
           Haz que tu trabajo
           <br />
-          hable por ti
+          <span className="inline-block bg-brand-teal px-4 py-1 border-2 border-brand-dark text-brand-dark mt-1">
+            hable por ti
+          </span>
         </h1>
 
         <p className="mb-10 max-w-2xl text-lg text-brand-white/70 md:text-xl">
