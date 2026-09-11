@@ -36,18 +36,17 @@ export function Header() {
           ))}
         </nav>
 
-        <button
+        <NeoButton
+          variant="teal"
+          className="text-xs px-4 py-2"
           onClick={() => {
             document
               .getElementById("footer")
               ?.scrollIntoView({ behavior: "smooth" });
           }}
-          className="cursor-pointer"
         >
-          <NeoButton variant="teal" className="text-xs px-4 py-2">
-            Únete al Discord
-          </NeoButton>
-        </button>
+          Únete al Discord
+        </NeoButton>
       </div>
     </header>
   );
