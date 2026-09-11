@@ -13,7 +13,7 @@ export function Hero() {
         <h1 className="mb-6 text-4xl font-bold uppercase leading-tight tracking-tight md:text-6xl md:leading-none">
           {t.headlineLine1}
           <br />
-          <span className="inline-block bg-brand-teal px-5 py-2 text-brand-dark mt-1 -rotate-2 transition-all duration-200 hover:-translate-y-0.5 hover:shadow-[2px_2px_0px_0px_#84c0bf]">
+          <span className="inline-block bg-brand-teal px-5 py-2 text-brand-dark mt-1 -rotate-2">
             {t.headlineHighlight}
           </span>
         </h1>

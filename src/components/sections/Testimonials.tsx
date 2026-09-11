@@ -8,9 +8,9 @@ export function Testimonials() {
   return (
     <section className="bg-brand-dark bg-noise text-brand-white">
       <div className="mx-auto max-w-6xl px-6 py-20 md:py-28">
-        <div className="mb-12 text-center">
-          <SectionBadge>{t.badge}</SectionBadge>
-          <h2 className="mt-6 text-3xl font-bold uppercase tracking-tight md:text-4xl">
+        <div className="mb-16 text-center">
+          <SectionBadge className="mb-6">{t.badge}</SectionBadge>
+          <h2 className="mt-4 text-3xl font-bold uppercase tracking-tight md:text-4xl">
             {t.title}
           </h2>
           <p className="mt-4 max-w-2xl mx-auto text-gray-300">
