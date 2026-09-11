@@ -22,8 +22,8 @@ export function Header() {
           <Image
             src="/logos/svg/LogoNav.svg"
             alt="TechToJob"
-            width={120}
-            height={18}
+            width={180}
+            height={27}
             priority
           />
         </a>
@@ -43,7 +43,7 @@ export function Header() {
         <div className="hidden md:block">
           <NeoButton
             variant="teal"
-            className="text-xs px-4 py-2"
+            className="text-sm px-5 py-2.5"
             onClick={() => {
               document
                 .getElementById("footer")
