@@ -12,11 +12,11 @@ export function HowItWorks() {
     <section id="como-funciona" className="bg-halftone">
       <div className="mx-auto max-w-6xl px-6 py-20 md:py-28">
         <div className="mb-12 text-center">
-          <div className="relative inline-block -rotate-1">
-            <SectionBadge className="absolute -top-4 left-1/2 -translate-x-1/2">
+          <div className="relative inline-block cursor-pointer transition-all duration-300 ease-out hover:-rotate-1 hover:-translate-y-1 group">
+            <SectionBadge className="absolute -top-4 left-1/2 -translate-x-1/2 transition-all duration-300 group-hover:-rotate-1 group-hover:-translate-y-1">
               {t.badge}
             </SectionBadge>
-            <div className="mt-4 bg-brand-white border-2 border-brand-dark px-8 py-6 shadow-[4px_4px_0px_0px_#2f3436]">
+            <div className="mt-4 bg-brand-white border-2 border-brand-dark px-8 py-6 shadow-[4px_4px_0px_0px_#2f3436] transition-all duration-300 hover:shadow-[8px_8px_0px_0px_#84c0bf]">
               <h2 className="text-3xl font-bold uppercase tracking-tight text-brand-dark md:text-4xl">
                 {t.title}
               </h2>
@@ -34,7 +34,11 @@ export function HowItWorks() {
               <li key={step.number}>
                 <NeoCard className="h-full text-center">
                   <div className="mx-auto mb-3 flex h-14 w-14 items-center justify-center border-2 border-brand-dark bg-brand-teal">
-                    <StepIcon size={28} strokeWidth={2} className="text-brand-dark" />
+                    <StepIcon
+                      size={28}
+                      strokeWidth={2}
+                      className="text-brand-dark"
+                    />
                   </div>
                   <span className="mb-1 inline-block text-2xl font-bold text-brand-teal">
                     {step.number}
@@ -42,7 +46,9 @@ export function HowItWorks() {
                   <h3 className="mb-2 text-lg font-bold uppercase tracking-wide">
                     {step.title}
                   </h3>
-                  <p className="text-sm text-brand-dark/70">{step.description}</p>
+                  <p className="text-sm text-brand-dark/70">
+                    {step.description}
+                  </p>
                 </NeoCard>
               </li>
             );
