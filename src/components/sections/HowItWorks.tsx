@@ -32,26 +32,31 @@ export function HowItWorks() {
       <div className="mx-auto max-w-6xl px-6 py-20 md:py-28">
         <div className="mb-12 text-center">
           <SectionBadge>Cómo funciona</SectionBadge>
-          <h2 className="mt-6 text-3xl font-bold uppercase tracking-tight text-brand-dark md:text-4xl">
-            Tres pasos. Sin rodeos.
-          </h2>
-          <p className="mt-4 max-w-2xl mx-auto text-lg font-semibold text-brand-dark">
-            Las oportunidades no salen de rellenar formularios. Salen de
-            participar.
-          </p>
+          <div className="mt-6 inline-block -rotate-1 bg-brand-white border-2 border-brand-dark px-8 py-6 shadow-[4px_4px_0px_0px_#2f3436]">
+            <h2 className="text-3xl font-bold uppercase tracking-tight text-brand-dark md:text-4xl">
+              Tres pasos. Sin rodeos.
+            </h2>
+            <p className="mt-3 max-w-2xl text-lg font-semibold text-brand-dark/80">
+              Las oportunidades no salen de rellenar formularios. Salen de
+              participar.
+            </p>
+          </div>
         </div>
 
         <ol className="grid gap-8 md:grid-cols-3">
           {steps.map((step) => (
             <li key={step.number}>
               <NeoCard className="h-full text-center">
-                <div className="mx-auto mb-4 flex h-14 w-14 items-center justify-center border-2 border-brand-dark bg-brand-teal">
+                <div className="mx-auto mb-3 flex h-14 w-14 items-center justify-center border-2 border-brand-dark bg-brand-teal">
                   <step.Icon size={28} strokeWidth={2} className="text-brand-dark" />
                 </div>
+                <span className="mb-1 inline-block text-2xl font-bold text-brand-teal">
+                  {step.number}
+                </span>
                 <h3 className="mb-2 text-lg font-bold uppercase tracking-wide">
-                  {step.number}. {step.title}
+                  {step.title}
                 </h3>
-                <p className="text-brand-dark/70">{step.description}</p>
+                <p className="text-sm text-brand-dark/70">{step.description}</p>
               </NeoCard>
             </li>
           ))}
