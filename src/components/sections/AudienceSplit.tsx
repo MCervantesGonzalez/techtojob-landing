@@ -2,8 +2,11 @@ import { User, Building2 } from "lucide-react";
 import { NeoButton } from "@/components/ui/NeoButton";
 import { NeoCard } from "@/components/ui/NeoCard";
 import { SectionBadge } from "@/components/ui/SectionBadge";
+import messages from "@/messages/es.json";
 
 export function AudienceSplit() {
+  const t = messages.audienceSplit;
+
   return (
     <section
       id="para-quien"
@@ -13,15 +16,14 @@ export function AudienceSplit() {
         <div className="mb-12 text-center">
           <div className="relative inline-block -rotate-1">
             <SectionBadge className="absolute -top-4 left-1/2 -translate-x-1/2">
-              Para quién
+              {t.badge}
             </SectionBadge>
             <div className="mt-4 bg-brand-white border-2 border-brand-dark px-8 py-6 shadow-[4px_4px_0px_0px_#2f3436]">
               <h2 className="text-3xl font-bold uppercase tracking-tight text-brand-dark md:text-4xl">
-                DOS LADOS, MISMO OBJETIVO
+                {t.title}
               </h2>
               <p className="mt-3 max-w-2xl text-lg font-semibold text-brand-dark/80">
-                No importa si buscas trabajo o si buscas gente. Aquí empieza
-                igual: entrando a la comunidad.
+                {t.description}
               </p>
             </div>
           </div>
@@ -34,14 +36,10 @@ export function AudienceSplit() {
                 <User size={28} strokeWidth={2} className="text-brand-dark" />
               </div>
               <h3 className="mb-2 text-xl font-bold uppercase tracking-wide text-brand-dark">
-                PARA DEVS
+                {t.devs.title}
               </h3>
               <p className="mb-6 text-sm text-brand-dark/70">
-                Publica tu perfil con tu stack, tu nivel y qué buscas. Las
-                empresas de la comunidad lo consultan cuando necesitan a
-                alguien. Te escriben directamente. Sin filtros automáticos que
-                descarten tu CV antes de que lo lea una persona. No hace falta
-                ser senior. No cuesta dinero.
+                {t.devs.description}
               </p>
             </div>
             <a
@@ -50,7 +48,7 @@ export function AudienceSplit() {
               rel="noopener noreferrer"
             >
               <NeoButton variant="teal" className="w-full sm:w-auto">
-                Publica tu perfil
+                {t.devs.cta}
               </NeoButton>
             </a>
           </NeoCard>
@@ -65,12 +63,10 @@ export function AudienceSplit() {
                 />
               </div>
               <h3 className="mb-2 text-xl font-bold uppercase tracking-wide text-brand-dark">
-                PARA EMPRESAS
+                {t.companies.title}
               </h3>
               <p className="mb-6 text-sm text-brand-dark/70">
-                Publica lo que buscas y accede a perfiles reales. Aquí ves a la
-                gente trabajar antes de contratarla, no solo su CV. Menos criba
-                y más contexto real. Sin intermediarios.
+                {t.companies.description}
               </p>
             </div>
             <a
@@ -79,7 +75,7 @@ export function AudienceSplit() {
               rel="noopener noreferrer"
             >
               <NeoButton variant="teal" className="w-full sm:w-auto">
-                Publica tu oferta
+                {t.companies.cta}
               </NeoButton>
             </a>
           </NeoCard>

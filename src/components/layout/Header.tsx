@@ -4,16 +4,18 @@ import { useState } from "react";
 import Image from "next/image";
 import { Menu, X } from "lucide-react";
 import { NeoButton } from "@/components/ui/NeoButton";
-
-const links = [
-  { label: "Cómo funciona", href: "#como-funciona" },
-  { label: "Para quién", href: "#para-quien" },
-  { label: "Torneos", href: "#torneos" },
-  { label: "Novedades", href: "#novedades" },
-];
+import messages from "@/messages/es.json";
 
 export function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const t = messages.header;
+
+  const navLinks = [
+    { label: t.nav.howItWorks, href: "#como-funciona" },
+    { label: t.nav.forWhom, href: "#para-quien" },
+    { label: t.nav.tournaments, href: "#torneos" },
+    { label: t.nav.news, href: "#novedades" },
+  ];
 
   return (
     <header className="sticky top-0 z-50 bg-brand-dark text-brand-white border-b-2 border-brand-teal">
@@ -29,7 +31,7 @@ export function Header() {
         </a>
 
         <nav className="hidden items-center gap-8 md:flex">
-          {links.map((link) => (
+          {navLinks.map((link) => (
             <a
               key={link.href}
               href={link.href}
@@ -50,14 +52,14 @@ export function Header() {
                 ?.scrollIntoView({ behavior: "smooth" });
             }}
           >
-            Únete al Discord
+            {t.cta}
           </NeoButton>
         </div>
 
         <button
           className="cursor-pointer md:hidden"
           onClick={() => setMenuOpen(!menuOpen)}
-          aria-label={menuOpen ? "Cerrar menú" : "Abrir menú"}
+          aria-label={menuOpen ? t.menuClose : t.menuOpen}
         >
           {menuOpen ? (
             <X size={28} className="text-brand-white" />
@@ -70,7 +72,7 @@ export function Header() {
       {menuOpen && (
         <div className="border-t-2 border-brand-white/10 px-6 py-6 md:hidden">
           <nav className="flex flex-col gap-4 mb-6">
-            {links.map((link) => (
+            {navLinks.map((link) => (
               <a
                 key={link.href}
                 href={link.href}
@@ -91,7 +93,7 @@ export function Header() {
                 ?.scrollIntoView({ behavior: "smooth" });
             }}
           >
-            Únete al Discord
+            {t.cta}
           </NeoButton>
         </div>
       )}

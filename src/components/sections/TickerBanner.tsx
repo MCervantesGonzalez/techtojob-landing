@@ -1,18 +1,7 @@
-const keywords = [
-  "#DESARROLLO",
-  "TORNEOS EN VIVO",
-  "CERO BOTS DE RRHH",
-  "CÓDIGO QUE HABLA",
-  "PROYECTOS REALES",
-  "#INFRA-Y-DEVOPS",
-  "#DATOS-E-IA",
-  "#PORTFOLIOS",
-  "#OFERTAS-TRABAJO",
-  "SIN PERFILES FALSOS",
-];
+import messages from "@/messages/es.json";
 
 export function TickerBanner() {
-  const items = [...keywords, ...keywords];
+  const items = [...messages.tickerBanner.keywords, ...messages.tickerBanner.keywords];
 
   return (
     <div className="overflow-hidden border-y-2 border-brand-dark bg-brand-teal py-3">

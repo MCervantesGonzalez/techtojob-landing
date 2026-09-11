@@ -6,6 +6,7 @@ import {
   InstagramIcon,
   TikTokIcon,
 } from "./SocialIcons";
+import messages from "@/messages/es.json";
 
 const socialLinks = [
   { label: "Discord", href: "https://discord.gg/h9FFgKdkRd", Icon: DiscordIcon },
@@ -16,6 +17,8 @@ const socialLinks = [
 ];
 
 export function Footer() {
+  const t = messages.footer;
+
   return (
     <footer id="footer" className="bg-brand-white border-t-4 border-brand-dark px-6 py-10 relative z-10 sm:px-12 text-brand-dark">
       <div className="mx-auto flex max-w-6xl flex-col md:flex-row items-center justify-between gap-6">
@@ -29,7 +32,7 @@ export function Footer() {
             />
           </a>
           <p className="text-xs text-brand-dark/60 text-center md:text-left">
-            Comunidad de desarrolladores y empresas tech en español.
+            {t.description}
           </p>
         </div>
 
@@ -50,7 +53,7 @@ export function Footer() {
         </ul>
 
         <p className="text-xs text-brand-dark/60 text-center md:text-right">
-          &copy; 2026 TechToJob. Todos los derechos reservados.
+          {t.copyright}
         </p>
       </div>
     </footer>

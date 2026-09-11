@@ -1,0 +1,224 @@
+{
+  "metadata": {
+    "title": "TechToJob — Comunidad de desarrolladores y empresas tech",
+    "description": "Comunidad de desarrolladores y empresas tech en español. Construye, participa y te conocen antes de que haya una vacante."
+  },
+  "header": {
+    "nav": {
+      "howItWorks": "Cómo funciona",
+      "forWhom": "Para quién",
+      "tournaments": "Torneos",
+      "news": "Novedades"
+    },
+    "cta": "Únete al Discord",
+    "menuOpen": "Abrir menú",
+    "menuClose": "Cerrar menú"
+  },
+  "tickerBanner": {
+    "keywords": [
+      "#DESARROLLO",
+      "TORNEOS EN VIVO",
+      "CERO BOTS DE RRHH",
+      "CÓDIGO QUE HABLA",
+      "PROYECTOS REALES",
+      "#INFRA-Y-DEVOPS",
+      "#DATOS-E-IA",
+      "#PORTFOLIOS",
+      "#OFERTAS-TRABAJO",
+      "SIN PERFILES FALSOS"
+    ]
+  },
+  "hero": {
+    "badge": "Cero CVs al vacío",
+    "headlineLine1": "Haz que tu trabajo",
+    "headlineHighlight": "hable por ti",
+    "description": "TechToJob es la comunidad donde desarrolladores y empresas se conocen antes de que exista una vacante. Construyes, participas y te ven trabajar.",
+    "cta": "Únete a la comunidad"
+  },
+  "howItWorks": {
+    "badge": "Cómo funciona",
+    "title": "Tres pasos. Sin rodeos.",
+    "description": "Las oportunidades no salen de rellenar formularios. Salen de participar.",
+    "steps": [
+      {
+        "number": "01",
+        "title": "Entras al Discord",
+        "description": "Sin formularios. Sin esperas. Entras, te presentas y empiezas a formar parte."
+      },
+      {
+        "number": "02",
+        "title": "Compartes código o participas en torneos",
+        "description": "Resuelves retos reales, contribuyes a proyectos y muestras cómo trabajas. No es sobre palabras, es sobre hechos."
+      },
+      {
+        "number": "03",
+        "title": "Te conocen antes de que haya una vacante",
+        "description": "Las empresas te ven trabajar. Te escriben directamente. Sin filtros automáticos que descarten tu CV antes de que lo lea una persona."
+      }
+    ]
+  },
+  "audienceSplit": {
+    "badge": "Para quién",
+    "title": "DOS LADOS, MISMO OBJETIVO",
+    "description": "No importa si buscas trabajo o si buscas gente. Aquí empieza igual: entrando a la comunidad.",
+    "devs": {
+      "title": "PARA DEVS",
+      "description": "Publica tu perfil con tu stack, tu nivel y qué buscas. Las empresas de la comunidad lo consultan cuando necesitan a alguien. Te escriben directamente. Sin filtros automáticos que descarten tu CV antes de que lo lea una persona. No hace falta ser senior. No cuesta dinero.",
+      "cta": "Publica tu perfil"
+    },
+    "companies": {
+      "title": "PARA EMPRESAS",
+      "description": "Publica lo que buscas y accede a perfiles reales. Aquí ves a la gente trabajar antes de contratarla, no solo su CV. Menos criba y más contexto real. Sin intermediarios.",
+      "cta": "Publica tu oferta"
+    }
+  },
+  "tournaments": {
+    "badge": "Torneos",
+    "title": "Construye bajo presión.",
+    "description": "Retos abiertos, entregas reales, jurado con criterios públicos. No es por el premio. Es por lo que aprendes y quién te ve.",
+    "features": [
+      {
+        "title": "Retos reales",
+        "description": "No es un coding challenge genérico. Construyes algo que se usa. El jurado evalúa con criterios públicos, sin letra pequeña."
+      },
+      {
+        "title": "Aprendes y te conocen",
+        "description": "Cada torneo es una oportunidad para mejorar y tener algo que enseñar en una entrevista. Participar te pone delante de empresas reales."
+      },
+      {
+        "title": "Lo que ganas, se usa",
+        "description": "Esta misma web salió de un torneo. Los proyectos ganadores viven, se despliegan y se usan. No son trofeos digitales."
+      }
+    ]
+  },
+  "news": {
+    "badge": "Novedades",
+    "readMore": "Leer más",
+    "items": [
+      {
+        "category": "Torneos",
+        "date": "3 sep 2026",
+        "title": "El logo de TechToJob salió de un torneo. Ahora le toca a la landing.",
+        "body": "El torneo anterior definió la identidad visual que usa hoy toda la comunidad. Este torneo hace lo mismo con la landing oficial."
+      },
+      {
+        "category": "Empleo",
+        "date": "5 sep 2026",
+        "title": "Canales de trabajo: así se mueven las oportunidades dentro del servidor",
+        "body": "Dos canales, un mismo objetivo: que el talento y las empresas se encuentren sin pasar por un formulario."
+      },
+      {
+        "category": "Comunidad",
+        "date": "8 sep 2026",
+        "title": "Nuevo canal de Foro: preguntas y sugerencias en un solo lugar",
+        "body": "Dudas, sugerencias y propuestas de mejora, ahora centralizadas en un solo canal."
+      }
+    ]
+  },
+  "networking": {
+    "badge": "Networking",
+    "title": "Los buenos trabajos no se encuentran. Se enteran.",
+    "description": "Canales por área, gente del sector, dudas resueltas en minutos. Ofertas que alguien comparte porque conoce a quien contrata.",
+    "channels": [
+      {
+        "name": "#DESARROLLO",
+        "description": "Dudas de código, code reviews, arquitectura. Gente que sabe respondiendo en minutos."
+      },
+      {
+        "name": "#INFRA-Y-DEVOPS",
+        "description": "CI/CD, contenedores, cloud. Si levantas infra, hay alguien que ya pasó por lo mismo."
+      },
+      {
+        "name": "#DATOS-E-IA",
+        "description": "Machine learning, pipelines, modelos. La comunidad más activa del sector en español."
+      },
+      {
+        "name": "#PORTFOLIOS",
+        "description": "Muestra tu trabajo. Obtén feedback real de personas que contratan."
+      },
+      {
+        "name": "#OFERTAS-TRABAJO",
+        "description": "Ofertas que alguien comparte porque conoce a quien contrata. No es un tablón, es un contacto."
+      }
+    ]
+  },
+  "testimonials": {
+    "badge": "Testimonios",
+    "title": "Gente real. Resultados reales.",
+    "description": "La comunidad funciona. Estos son algunos de los que ya sacaron algo de valor participando.",
+    "linkedinCta": "LinkedIn →",
+    "items": [
+      {
+        "name": "Carlos Mendoza",
+        "role": "Frontend Developer",
+        "quote": "Participé en un torneo sin esperar nada. Al mes me escribió una empresa porque vio mi proyecto. No mandé ni un CV."
+      },
+      {
+        "name": "Laura Jiménez",
+        "role": "Backend Engineer",
+        "quote": "Los canales de networking son otro nivel. Resolví un problema de infraestructura en 10 minutos con alguien que pasó por lo mismo."
+      },
+      {
+        "name": "Andrés Rivas",
+        "role": "Full Stack Developer",
+        "quote": "De junior a tener trabajo en 3 meses. No fue suerte. Fue participar, construir y que te conozcan de verdad."
+      },
+      {
+        "name": "María Torres",
+        "role": "Data Engineer",
+        "quote": "En LinkedIn nadie te contesta. Aquí te escriben directamente porque han visto cómo trabajas. Es otra cosa."
+      }
+    ]
+  },
+  "newsletter": {
+    "badge": "Newsletter",
+    "title": "No te pierdas nada",
+    "description": "Recibe cada semana las mejores oportunidades, retos y novedades de la comunidad directamente en tu correo.",
+    "placeholder": "tu@email.com",
+    "cta": "Suscribirme"
+  },
+  "faq": {
+    "badge": "Preguntas frecuentes",
+    "title": "Sin rodeos",
+    "items": [
+      {
+        "question": "¿Qué es TechToJob?",
+        "answer": "No es un portal de empleo. Es una comunidad de desarrolladores y empresas tech en español. Aquí construyes, participas y te conocen antes de que haya una vacante."
+      },
+      {
+        "question": "¿Cómo empiezo?",
+        "answer": "Entras al Discord, te presentas y empiezas a participar. No hay formularios largos. No hay filtros de CV. Solo entra y forma parte."
+      },
+      {
+        "question": "¿Cómo me encuentran las empresas?",
+        "answer": "Participas en torneos, compartes código, publicas tu perfil con tu stack y nivel. Las empresas te ven trabajar y te escriben directamente. Sin filtros automáticos."
+      },
+      {
+        "question": "¿Es gratis para desarrolladores?",
+        "answer": "Sí. No hay coste para ti. Las empresas publican sus ofertas y acceden a perfiles, tú solo participas y construyes."
+      },
+      {
+        "question": "¿Necesito ser senior?",
+        "answer": "No. Juniors, mid-levels, seniors. Aquí no hay filtro de antigüedad. Si construyes y participas, te conocen."
+      },
+      {
+        "question": "¿Cómo funcionan los torneos?",
+        "answer": "Retos reales, entregas con fecha, jurado con criterios públicos. Lo que ganas se usa. Esta misma web salió de un torneo."
+      },
+      {
+        "question": "¿Qué pasa si no consigo trabajo?",
+        "answer": "Aprendes, tienes algo que enseñar en entrevistas, construyes tu portafolio y te conectas con gente del sector. Los buenos trabajos no se encuentran, se enteran."
+      }
+    ]
+  },
+  "ctaClose": {
+    "title": "El trabajo que buscas ya te conoce. Solo falta que llegues.",
+    "description": "No llenes más formularios. Participa, construye y que te encuentren.",
+    "cta": "Únete al Discord"
+  },
+  "footer": {
+    "description": "Comunidad de desarrolladores y empresas tech en español.",
+    "copyright": "© 2026 TechToJob. Todos los derechos reservados."
+  },
+  "scrollToTop": "Volver arriba"
+}

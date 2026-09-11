@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Sora } from "next/font/google";
 import { ScrollToTop } from "@/components/ui/ScrollToTop";
+import messages from "@/messages/es.json";
 import "./globals.css";
 
 const sora = Sora({
@@ -10,9 +11,8 @@ const sora = Sora({
 });
 
 export const metadata: Metadata = {
-  title: "TechToJob — Comunidad de desarrolladores y empresas tech",
-  description:
-    "Comunidad de desarrolladores y empresas tech en español. Construye, participa y te conocen antes de que haya una vacante.",
+  title: messages.metadata.title,
+  description: messages.metadata.description,
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
