@@ -37,31 +37,35 @@ const channels = [
 
 export function Networking() {
   return (
-    <section className="bg-brand-dark bg-noise text-brand-white">
+    <section className="bg-halftone">
       <div className="mx-auto max-w-6xl px-6 py-20 md:py-28">
         <div className="mb-12 text-center">
-          <SectionBadge>Networking</SectionBadge>
-          <h2 className="mt-6 text-3xl font-bold uppercase tracking-tight md:text-4xl">
-            Los buenos trabajos no se encuentran. Se enteran.
-          </h2>
-          <p className="mt-4 max-w-2xl mx-auto text-brand-white/70">
-            Canales por área, gente del sector, dudas resueltas en minutos.
-            Ofertas que alguien comparte porque conoce a quien contrata.
-          </p>
+          <div className="relative inline-block -rotate-1">
+            <SectionBadge className="absolute -top-4 left-1/2 -translate-x-1/2">
+              Networking
+            </SectionBadge>
+            <div className="mt-4 bg-brand-white border-2 border-brand-dark px-8 py-6 shadow-[4px_4px_0px_0px_#2f3436] text-center">
+              <h2 className="text-3xl font-bold uppercase tracking-tight text-brand-dark md:text-4xl">
+                Los buenos trabajos no se encuentran. Se enteran.
+              </h2>
+              <p className="mt-3 max-w-2xl mx-auto text-lg font-semibold text-brand-dark/80">
+                Canales por área, gente del sector, dudas resueltas en minutos.
+                Ofertas que alguien comparte porque conoce a quien contrata.
+              </p>
+            </div>
+          </div>
         </div>
 
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {channels.map((channel) => (
-            <NeoCard key={channel.name} variant="dark" className="flex flex-col">
-              <channel.Icon
-                className="mb-3 text-brand-teal"
-                size={28}
-                strokeWidth={2}
-              />
-              <h3 className="mb-2 text-lg font-bold uppercase tracking-wide text-brand-teal">
+            <NeoCard key={channel.name} className="flex flex-col items-center text-center">
+              <div className="mb-4 flex h-14 w-14 items-center justify-center border-2 border-brand-dark bg-brand-teal">
+                <channel.Icon size={28} strokeWidth={2} className="text-brand-dark" />
+              </div>
+              <h3 className="mb-2 text-lg font-bold uppercase tracking-wide text-brand-dark">
                 {channel.name}
               </h3>
-              <p className="text-sm text-brand-white/70">
+              <p className="text-sm text-brand-dark/70">
                 {channel.description}
               </p>
             </NeoCard>
