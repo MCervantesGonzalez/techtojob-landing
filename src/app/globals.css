@@ -9,6 +9,11 @@
   --font-sans: var(--font-sora);
 }
 
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
+}
+
 :root {
   --background: #ffffff;
   --foreground: #2f3436;
