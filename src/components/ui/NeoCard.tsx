@@ -10,7 +10,7 @@ export function NeoCard({
   children,
   ...props
 }: NeoCardProps) {
-  const base = "border-2 border-brand-dark p-6 shadow-[4px_4px_0px_0px_#2f3436]";
+  const base = "border-2 border-brand-dark p-6 shadow-[4px_4px_0px_0px_#2f3436] transition-all duration-200 hover:-translate-x-1 hover:-translate-y-1.5 hover:shadow-[8px_8px_0px_0px_#84c0bf]";
 
   const variants: Record<string, string> = {
     light: "bg-brand-white text-brand-dark",

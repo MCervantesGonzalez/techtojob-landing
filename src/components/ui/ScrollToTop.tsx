@@ -18,7 +18,7 @@ export function ScrollToTop() {
   return (
     <button
       onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-      className="fixed bottom-6 right-6 z-50 cursor-pointer border-2 border-brand-dark bg-brand-teal p-3 shadow-[4px_4px_0px_0px_#2f3436] transition-colors hover:bg-brand-white"
+      className="fixed bottom-6 right-6 z-50 cursor-pointer border-2 border-brand-dark bg-brand-teal p-3 shadow-[4px_4px_0px_0px_#2f3436] transition-all duration-150 hover:-translate-x-0.5 hover:-translate-y-0.5 hover:bg-brand-white hover:shadow-[6px_6px_0px_0px_#2f3436]"
       aria-label={messages.scrollToTop}
     >
       <Image

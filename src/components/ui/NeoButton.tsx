@@ -11,7 +11,7 @@ export function NeoButton({
   ...props
 }: NeoButtonProps) {
   const base =
-    "inline-flex items-center justify-center font-semibold uppercase tracking-wide text-sm border-2 border-brand-dark transition-colors cursor-pointer px-6 py-3";
+    "inline-flex items-center justify-center font-semibold uppercase tracking-wide text-sm border-2 border-brand-dark transition-all duration-150 hover:-translate-x-0.5 hover:-translate-y-0.5 hover:shadow-[4px_4px_0px_0px_#2f3436] cursor-pointer px-6 py-3";
 
   const variants: Record<string, string> = {
     primary:

@@ -24,7 +24,7 @@ export function FAQ() {
             return (
               <div
                 key={faq.question}
-                className="bg-brand-dark border-2 border-brand-teal shadow-[3px_3px_0px_0px_#84c0bf] rounded-xl mb-4 overflow-hidden"
+                className="bg-brand-dark border-2 border-brand-teal shadow-[3px_3px_0px_0px_#84c0bf] rounded-xl mb-4 overflow-hidden transition-all duration-200 hover:-translate-x-0.5 hover:-translate-y-1 hover:shadow-[5px_5px_0px_0px_#84c0bf]"
               >
                 <button
                   onClick={() => setOpenIndex(isOpen ? null : i)}
