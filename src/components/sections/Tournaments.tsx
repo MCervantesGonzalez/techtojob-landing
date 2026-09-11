@@ -1,5 +1,4 @@
 import { Trophy, Lightbulb, Rocket } from "lucide-react";
-import { NeoButton } from "@/components/ui/NeoButton";
 import { NeoCard } from "@/components/ui/NeoCard";
 import { SectionBadge } from "@/components/ui/SectionBadge";
 
@@ -33,11 +32,11 @@ export function Tournaments() {
             <SectionBadge className="absolute -top-4 left-1/2 -translate-x-1/2">
               Torneos
             </SectionBadge>
-            <div className="mt-4 bg-brand-white border-2 border-brand-dark px-8 py-6 shadow-[4px_4px_0px_0px_#2f3436]">
+            <div className="mt-4 bg-brand-white border-2 border-brand-dark px-8 py-6 shadow-[4px_4px_0px_0px_#2f3436] text-center">
               <h2 className="text-3xl font-bold uppercase tracking-tight text-brand-dark md:text-4xl">
-                Construye bajo presión. Destaca de verdad.
+                Construye bajo presión.
               </h2>
-              <p className="mt-3 max-w-2xl text-lg font-semibold text-brand-dark/80">
+              <p className="mt-3 max-w-2xl mx-auto text-lg font-semibold text-brand-dark/80">
                 Retos abiertos, entregas reales, jurado con criterios públicos. No
                 es por el premio. Es por lo que aprendes y quién te ve.
               </p>
@@ -59,16 +58,6 @@ export function Tournaments() {
               <p className="text-brand-dark/70">{feature.description}</p>
             </NeoCard>
           ))}
-        </div>
-
-        <div className="mt-12 text-center">
-          <a
-            href="https://discord.gg/h9FFgKdkRd"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <NeoButton variant="primary">Únete al próximo torneo</NeoButton>
-          </a>
         </div>
       </div>
     </section>
