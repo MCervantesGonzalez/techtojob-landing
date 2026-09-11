@@ -1,3 +1,4 @@
+import { Trophy, Lightbulb, Rocket } from "lucide-react";
 import { NeoButton } from "@/components/ui/NeoButton";
 import { NeoCard } from "@/components/ui/NeoCard";
 import { SectionBadge } from "@/components/ui/SectionBadge";
@@ -7,16 +8,19 @@ const features = [
     title: "Retos reales",
     description:
       "No es un coding challenge genérico. Construyes algo que se usa. El jurado evalúa con criterios públicos, sin letra pequeña.",
+    Icon: Trophy,
   },
   {
     title: "Aprendes y te danastically conocen",
     description:
       "Cada torneo es una oportunidad para mejorar y tener algo que enseñar en una entrevista. Participar te pone delante de empresas reales.",
+    Icon: Lightbulb,
   },
   {
     title: "Lo que ganas, se usa",
     description:
       "Esta misma web salió de un torneo. Los proyectos ganadores viven, se despliegan y se usan. No son trofeos digitales.",
+    Icon: Rocket,
   },
 ];
 
@@ -38,6 +42,11 @@ export function Tournaments() {
         <div className="grid gap-8 md:grid-cols-3">
           {features.map((feature) => (
             <NeoCard key={feature.title} className="flex flex-col">
+              <feature.Icon
+                className="mb-4 text-brand-teal"
+                size={32}
+                strokeWidth={2}
+              />
               <h3 className="mb-2 text-lg font-bold uppercase tracking-wide">
                 {feature.title}
               </h3>

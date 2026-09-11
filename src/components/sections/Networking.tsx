@@ -1,3 +1,4 @@
+import { Code2, Server, Brain, Briefcase, Handshake } from "lucide-react";
 import { NeoCard } from "@/components/ui/NeoCard";
 import { SectionBadge } from "@/components/ui/SectionBadge";
 
@@ -6,26 +7,31 @@ const channels = [
     name: "#DESARROLLO",
     description:
       "Dudas de código, code reviews, arquitectura. Gente que sabe respondiendo en minutos.",
+    Icon: Code2,
   },
   {
     name: "#INFRA-Y-DEVOPS",
     description:
       "CI/CD, contenedores, cloud. Si levantas infra, hay alguien que ya pasó por lo mismo.",
+    Icon: Server,
   },
   {
     name: "#DATOS-E-IA",
     description:
       "Machine learning, pipelines, modelos. La comunidad más activa del sector en español.",
+    Icon: Brain,
   },
   {
     name: "#PORTFOLIOS",
     description:
       "Muestra tu trabajo. Obtén feedback real de personas que contratan.",
+    Icon: Briefcase,
   },
   {
     name: "#OFERTAS-TRABAJO",
     description:
       "Ofertas que alguien comparte porque conoce a quien contrata. No es un tablón, es un contacto.",
+    Icon: Handshake,
   },
 ];
 
@@ -47,6 +53,11 @@ export function Networking() {
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {channels.map((channel) => (
             <NeoCard key={channel.name} variant="dark" className="flex flex-col">
+              <channel.Icon
+                className="mb-3 text-brand-teal"
+                size={28}
+                strokeWidth={2}
+              />
               <h3 className="mb-2 text-lg font-bold uppercase tracking-wide text-brand-teal">
                 {channel.name}
               </h3>

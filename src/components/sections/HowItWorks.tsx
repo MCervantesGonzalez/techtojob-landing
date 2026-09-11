@@ -1,3 +1,4 @@
+import { LogIn, Code, UserCheck } from "lucide-react";
 import { NeoCard } from "@/components/ui/NeoCard";
 import { SectionBadge } from "@/components/ui/SectionBadge";
 
@@ -7,18 +8,21 @@ const steps = [
     title: "Entras al Discord",
     description:
       "Sin formularios. Sin esperas. Entras, te presentas y empiezas a formar parte.",
+    Icon: LogIn,
   },
   {
     number: "02",
     title: "Compartes código o participas en torneos",
     description:
       "Resuelves retos reales, contribuyes a proyectos y muestras cómo trabajas. No es sobre palabras, es sobre hechos.",
+    Icon: Code,
   },
   {
     number: "03",
     title: "Te conocen antes de que haya una vacante",
     description:
       "Las empresas te ven trabajar. Te escriben directamente. Sin filtros automáticos que descarten tu CV antes de que lo lea una persona.",
+    Icon: UserCheck,
   },
 ];
 
@@ -41,6 +45,11 @@ export function HowItWorks() {
           {steps.map((step) => (
             <li key={step.number}>
               <NeoCard className="h-full">
+                <step.Icon
+                  className="mb-4 text-brand-teal"
+                  size={32}
+                  strokeWidth={2}
+                />
                 <span className="mb-4 inline-block text-4xl font-bold text-brand-teal">
                   {step.number}
                 </span>

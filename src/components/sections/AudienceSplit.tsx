@@ -1,3 +1,4 @@
+import { User, Building2 } from "lucide-react";
 import { NeoButton } from "@/components/ui/NeoButton";
 import { NeoCard } from "@/components/ui/NeoCard";
 import { SectionBadge } from "@/components/ui/SectionBadge";
@@ -20,9 +21,11 @@ export function AudienceSplit() {
         <div className="grid gap-8 md:grid-cols-2">
           <NeoCard variant="dark" className="flex flex-col justify-between">
             <div>
-              <span className="mb-4 inline-block text-4xl font-bold text-brand-teal">
-                Tú
-              </span>
+              <User
+                className="mb-4 text-brand-teal"
+                size={40}
+                strokeWidth={2}
+              />
               <h3 className="mb-2 text-xl font-bold uppercase tracking-wide">
                 Ofrécete como talento
               </h3>
@@ -47,9 +50,11 @@ export function AudienceSplit() {
 
           <NeoCard variant="dark" className="flex flex-col justify-between">
             <div>
-              <span className="mb-4 inline-block text-4xl font-bold text-brand-teal">
-                Empresa
-              </span>
+              <Building2
+                className="mb-4 text-brand-teal"
+                size={40}
+                strokeWidth={2}
+              />
               <h3 className="mb-2 text-xl font-bold uppercase tracking-wide">
                 Publica como empresa
               </h3>
