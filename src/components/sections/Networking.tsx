@@ -46,7 +46,7 @@ export function Networking() {
     <section className="bg-halftone">
       <div className="mx-auto max-w-6xl px-6 py-20 md:py-28">
         <div className="mb-12 text-center">
-          <div className="relative inline-block cursor-pointer transition-all duration-300 ease-out hover:-rotate-1 hover:-translate-y-1 group">
+          <div className="relative inline-block cursor-pointer transition-all duration-300 ease-out hover:rotate-1 hover:-translate-y-1 group">
             <SectionBadge className="absolute -top-4 left-1/2 -translate-x-1/2 transition-all duration-300 group-hover:-rotate-1 group-hover:-translate-y-1">
               {t.badge}
             </SectionBadge>
@@ -65,9 +65,16 @@ export function Networking() {
           {t.channels.map((channel, i) => {
             const ChannelIcon = channelIcons[i];
             return (
-              <NeoCard key={channel.name} className="flex flex-col items-center text-center">
+              <NeoCard
+                key={channel.name}
+                className="flex flex-col items-center text-center"
+              >
                 <div className="mb-4 flex h-14 w-14 items-center justify-center border-2 border-brand-dark bg-brand-teal">
-                  <ChannelIcon size={28} strokeWidth={2} className="text-brand-dark" />
+                  <ChannelIcon
+                    size={28}
+                    strokeWidth={2}
+                    className="text-brand-dark"
+                  />
                 </div>
                 <h3 className="mb-2 text-lg font-bold uppercase tracking-wide text-brand-dark">
                   {channel.name}

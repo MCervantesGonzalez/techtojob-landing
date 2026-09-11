@@ -48,8 +48,8 @@ export function News() {
     <section id="novedades" className="bg-brand-dark bg-noise text-brand-white">
       <div className="mx-auto max-w-6xl px-6 py-20 md:py-28">
         <div className="mb-12 text-center">
-          <div className="relative inline-block cursor-pointer transition-all duration-300 ease-out hover:rotate-1 hover:-translate-y-1 group">
-            <SectionBadge className="absolute -top-4 left-1/2 -translate-x-1/2 transition-all duration-300 group-hover:rotate-1 group-hover:-translate-y-1">
+          <div className="relative inline-block cursor-pointer transition-all duration-300 ease-out hover:-rotate-1 hover:-translate-y-1 group">
+            <SectionBadge className="absolute -top-4 left-1/2 -translate-x-1/2 transition-all duration-300 group-hover:-rotate-1 group-hover:-translate-y-1">
               {t.badge}
             </SectionBadge>
             <div className="mt-4 bg-brand-white border-2 border-brand-dark px-8 py-6 shadow-[4px_4px_0px_0px_#2f3436] text-center transition-all duration-300 hover:shadow-[8px_8px_0px_0px_#84c0bf]">
@@ -70,7 +70,9 @@ export function News() {
                   >
                     {item.category}
                   </span>
-                  <span className="text-xs text-brand-dark/60">{item.date}</span>
+                  <span className="text-xs text-brand-dark/60">
+                    {item.date}
+                  </span>
                 </div>
                 <h3 className="mb-2 text-base font-bold uppercase tracking-wide text-brand-dark">
                   {item.title}
