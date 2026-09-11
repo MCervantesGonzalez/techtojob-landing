@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const talentLinks = [
   { label: "Ofrécete como talento", href: "#para-quien" },
   { label: "Torneos abiertos", href: "#torneos" },
@@ -29,11 +31,13 @@ export function Footer() {
       <div className="mx-auto max-w-6xl px-6 py-16">
         <div className="grid gap-12 sm:grid-cols-2 lg:grid-cols-4">
           <div>
-            <a
-              href="/"
-              className="mb-4 inline-block text-xl font-bold tracking-tight uppercase"
-            >
-              Tech<span className="text-brand-teal">ToJob</span>
+            <a href="/" className="mb-4 inline-block">
+              <Image
+                src="/logos/svg/LogoFooter.svg"
+                alt="TechToJob"
+                width={140}
+                height={21}
+              />
             </a>
             <p className="text-sm text-brand-white/60">
               La comunidad donde desarrolladores y empresas se conocen antes de
@@ -103,14 +107,14 @@ export function Footer() {
             <h3 className="mb-4 text-sm font-bold uppercase tracking-wide text-brand-teal">
               Síguenos
             </h3>
-            <ul className="flex flex-col gap-2">
+            <ul className="flex flex-wrap gap-2">
               {socialLinks.map((link) => (
                 <li key={link.label}>
                   <a
                     href={link.href}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-sm text-brand-white/70 hover:text-brand-teal transition-colors"
+                    className="inline-block border-2 border-brand-white/20 px-3 py-1.5 text-xs font-semibold uppercase tracking-wide text-brand-white/70 hover:border-brand-teal hover:text-brand-teal transition-colors"
                   >
                     {link.label}
                   </a>
