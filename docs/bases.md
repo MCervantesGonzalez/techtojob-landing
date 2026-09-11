@@ -228,8 +228,6 @@ Y seguimos buscando más: si alguien puede aportar algo (licencias, cursos, susc
 
 ━━━━━━━━━━━━━━━━━━━━
 
-📅 Recordad: entregas hasta el miércoles 23, revisión el jueves 24 y ganador el viernes 25
-
 ACTUALIZACIÓN DE LAS BASES — Torneo #2
 
 Dos cosas nuevas a partir de ahora. Ninguna os obliga a rehacer el diseño de lo que llevéis.

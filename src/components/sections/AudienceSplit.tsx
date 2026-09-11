@@ -14,7 +14,7 @@ export function AudienceSplit() {
     >
       <div className="mx-auto max-w-6xl px-6 py-20 md:py-28">
         <div className="mb-12 text-center">
-          <div className="relative inline-block cursor-pointer transition-all duration-300 ease-out hover:rotate-1 hover:-translate-y-1 group">
+          <div className="relative inline-block cursor-pointer transition-all duration-300 ease-out hover:-rotate-1 hover:-translate-y-1 group">
             <SectionBadge className="absolute -top-4 left-1/2 -translate-x-1/2 transition-all duration-300 group-hover:rotate-1 group-hover:-translate-y-1">
               {t.badge}
             </SectionBadge>

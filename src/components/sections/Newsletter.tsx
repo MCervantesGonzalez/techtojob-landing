@@ -9,7 +9,7 @@ export function Newsletter() {
   return (
     <section className="bg-halftone">
       <div className="mx-auto max-w-4xl px-6 py-20 md:py-28">
-        <div className="relative bg-brand-white border-2 border-brand-dark shadow-[6px_6px_0px_0px_#2f3436] p-8 md:p-12 rounded-2xl text-center transition-all duration-300 hover:-rotate-1 hover:-translate-y-1 hover:shadow-[8px_8px_0px_0px_#2f3436]">
+        <div className="relative bg-brand-white border-2 border-brand-dark shadow-[6px_6px_0px_0px_#2f3436] p-8 md:p-12 rounded-2xl text-center transition-all duration-300 hover:-rotate-0 hover:-translate-y-1 hover:shadow-[8px_8px_0px_0px_#2f3436]">
           <SectionBadge className="absolute -top-4 left-1/2 -translate-x-1/2">
             {t.badge}
           </SectionBadge>
