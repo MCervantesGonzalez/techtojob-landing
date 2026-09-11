@@ -45,19 +45,13 @@ export function FAQ() {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
   return (
-    <section className="bg-halftone">
+    <section className="bg-brand-dark bg-noise text-brand-white">
       <div className="mx-auto max-w-3xl px-6 py-20 md:py-28">
         <div className="mb-12 text-center">
-          <div className="relative inline-block -rotate-1">
-            <SectionBadge className="absolute -top-4 left-1/2 -translate-x-1/2">
-              Preguntas frecuentes
-            </SectionBadge>
-            <div className="mt-4 bg-brand-white border-2 border-brand-dark px-8 py-6 shadow-[4px_4px_0px_0px_#2f3436] text-center">
-              <h2 className="text-3xl font-bold uppercase tracking-tight text-brand-dark md:text-4xl">
-                Sin rodeos
-              </h2>
-            </div>
-          </div>
+          <SectionBadge>Preguntas frecuentes</SectionBadge>
+          <h2 className="mt-6 text-3xl font-bold uppercase tracking-tight md:text-4xl">
+            Sin rodeos
+          </h2>
         </div>
 
         <div className="flex flex-col">
@@ -66,7 +60,7 @@ export function FAQ() {
             return (
               <div
                 key={faq.question}
-                className="bg-white border-2 border-brand-dark shadow-[3px_3px_0px_0px_#2f3436] rounded-xl mb-4 overflow-hidden"
+                className="bg-brand-dark border-2 border-brand-teal shadow-[3px_3px_0px_0px_#84c0bf] rounded-xl mb-4 overflow-hidden"
               >
                 <button
                   onClick={() => setOpenIndex(isOpen ? null : i)}
@@ -76,12 +70,12 @@ export function FAQ() {
                   <span className="flex h-8 w-8 shrink-0 items-center justify-center border-2 border-brand-dark bg-brand-teal text-sm font-bold text-brand-dark">
                     {isOpen ? "−" : "+"}
                   </span>
-                  <span className="text-sm font-bold uppercase tracking-wide text-brand-dark">
+                  <span className="text-sm font-bold uppercase tracking-wide text-brand-white">
                     {faq.question}
                   </span>
                 </button>
                 {isOpen && (
-                  <div className="px-6 pb-6 pl-[60px] text-sm text-brand-dark/70">
+                  <div className="px-6 pb-6 pl-[60px] text-sm text-gray-300">
                     {faq.answer}
                   </div>
                 )}

@@ -7,7 +7,9 @@ import { Tournaments } from "@/components/sections/Tournaments";
 import { News } from "@/components/sections/News";
 import { Networking } from "@/components/sections/Networking";
 import { Testimonials } from "@/components/sections/Testimonials";
+import { Newsletter } from "@/components/sections/Newsletter";
 import { FAQ } from "@/components/sections/FAQ";
+import { CtaClose } from "@/components/sections/CtaClose";
 import { Footer } from "@/components/layout/Footer";
 
 export default function Home() {
@@ -23,7 +25,9 @@ export default function Home() {
         <News />
         <Networking />
         <Testimonials />
+        <Newsletter />
         <FAQ />
+        <CtaClose />
       </main>
       <Footer />
     </div>
