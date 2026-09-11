@@ -35,7 +35,7 @@ export function HowItWorks() {
           <h2 className="mt-6 text-3xl font-bold uppercase tracking-tight text-brand-dark md:text-4xl">
             Tres pasos. Sin rodeos.
           </h2>
-          <p className="mt-4 max-w-2xl mx-auto text-brand-dark/70">
+          <p className="mt-4 max-w-2xl mx-auto text-lg font-semibold text-brand-dark">
             Las oportunidades no salen de rellenar formularios. Salen de
             participar.
           </p>
@@ -44,17 +44,12 @@ export function HowItWorks() {
         <ol className="grid gap-8 md:grid-cols-3">
           {steps.map((step) => (
             <li key={step.number}>
-              <NeoCard className="h-full">
-                <step.Icon
-                  className="mb-4 text-brand-teal"
-                  size={32}
-                  strokeWidth={2}
-                />
-                <span className="mb-4 inline-block text-4xl font-bold text-brand-teal">
-                  {step.number}
-                </span>
+              <NeoCard className="h-full text-center">
+                <div className="mx-auto mb-4 flex h-14 w-14 items-center justify-center border-2 border-brand-dark bg-brand-teal">
+                  <step.Icon size={28} strokeWidth={2} className="text-brand-dark" />
+                </div>
                 <h3 className="mb-2 text-lg font-bold uppercase tracking-wide">
-                  {step.title}
+                  {step.number}. {step.title}
                 </h3>
                 <p className="text-brand-dark/70">{step.description}</p>
               </NeoCard>
